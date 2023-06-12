@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TaskMaster UK - Matching Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="tm.js"></script>
+  </head>
+  <body>
+    <div id="play">
+      <div id="deck-wrap" class="ui"><div id="deck"></div></div>
+      <div id="timer" class="ui">8:88</div>
+      <div id="current">
+        <div id="port"><div id="nb"></div></div>
+        <div id="name"></div>
+      </div>
+      <div id="pass-wrap" class="ui">
+        <div id="pass">Pass<span id="pass-info"></span></div>
+      </div>
+      <div id="settings" class="ui">
+        <input type="checkbox" id="st-timer" onchange="toggle_timer(this)" checked /><label for="st-timer">Show timer</label><br><br>
+        <span id="helpqm" onclick="toggle_help()">?</span>
+      </div>
+    </div>
+    <div id="board"></div>
+    <div id="ori-modal"><h1>Mea culpa.</h1><p>The experience for this game does not work well in portrait mode.</p><p>To play, please rotate your device to landscape mode.</p></div>
+    <div id="help-modal" onclick="toggle_help()">
+      <div id="help">
+        <h1>Series Business</h1><br>
+        <p>For each contestant, click/tap the series in which you think they participated.</p>
+        <p>Alternatively, you can pass and that contestant will come back around once you've exhausted the "deck".</p>
+        <p>Right-click/long-tap a placed contestant to undo.</p>
+        <p>The game continues until you've placed The 75th Contestant, after which your score will be tallied.</p>
+        <p>Fastest and most accurate wins a little slice of personal satisfaction.</p>
+        <p>Your time starts when you place your first contestant.</p>
+        <p class="smaller">Click/tap anywhere to hide this help box.</p>
+      </div>
+    </div>
+  </body>
+  </body>
+</html>
